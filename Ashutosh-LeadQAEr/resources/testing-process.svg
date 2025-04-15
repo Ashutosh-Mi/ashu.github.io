@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="Arial">
+  <!-- Title -->
+  <rect x="0" y="0" width="1000" height="50" fill="#2c3e50" />
+  <text x="500" y="32" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">SOFTWARE TESTING PROCESS</text>
+
+  <!-- Process Steps -->
+  <!-- 1. Requirement Analysis -->
+  <rect x="150" y="100" rx="5" ry="5" width="200" height="100" fill="#3498db" stroke="#2980b9" stroke-width="2" />
+  <text x="250" y="150" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Requirement Analysis</text>
+  <text x="250" y="170" font-size="12" fill="#fff" text-anchor="middle">Review & understand requirements</text>
+
+  <!-- 2. Test Planning -->
+  <rect x="450" y="100" rx="5" ry="5" width="200" height="100" fill="#e74c3c" stroke="#c0392b" stroke-width="2" />
+  <text x="550" y="150" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Test Planning</text>
+  <text x="550" y="170" font-size="12" fill="#fff" text-anchor="middle">Define scope, strategy, resources</text>
+
+  <!-- 3. Test Design -->
+  <rect x="150" y="250" rx="5" ry="5" width="200" height="100" fill="#2ecc71" stroke="#27ae60" stroke-width="2" />
+  <text x="250" y="300" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Test Design</text>
+  <text x="250" y="320" font-size="12" fill="#fff" text-anchor="middle">Create test cases & scripts</text>
+
+  <!-- 4. Test Execution -->
+  <rect x="450" y="250" rx="5" ry="5" width="200" height="100" fill="#f39c12" stroke="#d35400" stroke-width="2" />
+  <text x="550" y="300" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Test Execution</text>
+  <text x="550" y="320" font-size="12" fill="#fff" text-anchor="middle">Run tests & log results</text>
+
+  <!-- 5. Defect Tracking -->
+  <rect x="150" y="400" rx="5" ry="5" width="200" height="100" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" />
+  <text x="250" y="450" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Defect Tracking</text>
+  <text x="250" y="470" font-size="12" fill="#fff" text-anchor="middle">Report & manage bugs</text>
+
+  <!-- 6. Test Reporting -->
+  <rect x="450" y="400" rx="5" ry="5" width="200" height="100" fill="#1abc9c" stroke="#16a085" stroke-width="2" />
+  <text x="550" y="450" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Test Reporting</text>
+  <text x="550" y="470" font-size="12" fill="#fff" text-anchor="middle">Generate test summary</text>
+
+  <!-- Connector Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+
+  <!-- Horizontal Connectors -->
+  <path d="M350 150 L450 150" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M350 350 L450 350" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Vertical Connectors -->
+  <path d="M250 250 L250 200" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M550 250 L550 200" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M250 400 L250 350" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M550 400 L550 350" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- Optional: Legend -->
+  <rect x="700" y="100" width="250" height="150" fill="#f8f9fa" stroke="#ddd" rx="5" />
+  <text x="725" y="125" font-size="12" fill="#333">Process Flow:</text>
+  <circle cx="715" cy="150" r="8" fill="#3498db" />
+  <text x="735" y="155" font-size="12" fill="#333">Requirement Analysis</text>
+  <circle cx="715" cy="180" r="8" fill="#e74c3c" />
+  <text x="735" y="185" font-size="12" fill="#333">Test Planning</text>
+  <circle cx="715" cy="210" r="8" fill="#2ecc71" />
+  <text x="735" y="215" font-size="12" fill="#333">Test Execution</text>
+</svg>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- Add before Contact section -->
+<section id="automation" class="automation">
+    <div class="container">
+        <h2 class="section-title">Automation <span>Dashboard</span></h2>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">1,000+</div>
+                <div class="metric-label">Automated Tests</div>
+                <div class="metric-description">Maintained across multiple frameworks</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-value">65%</div>
+                <div class="metric-label">Regression Time Saved</div>
+                <div class="metric-description">Through parallel execution</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-value">92%</div>
+                <div class="metric-label">Pass Rate</div>
+                <div class="metric-description">Stable test automation suite</div>
+            </div>
+        </div>
+        
+       <div class="automation-artifacts">
+            <!-- Framework Architecture -->
+        <!--    <div class="artifact-card">
+                <h3>Framework Architecture</h3>
+                    <span>Page Object Model</span>
+                    <span>Data-Driven</span>
+                    <span>Modular Design</span>
+                </div>
+            </div>   -->
+ 
+</section>
+
+<section id="mobile-automation" class="mobile-automation">
+    <div class="container">
+        <h2 class="section-title">Mobile <span>Automation</span></h2>
+        
+        <div class="mobile-grid">
+            <div class="mobile-card">
+                <div class="mobile-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Appium Framework</h3>
+                <ul>
+                    <li>Cross-platform (iOS/Android)</li>
+                    <li>Integrated with Selenium Grid</li>
+                    <li>Parallel execution on BrowserStack</li>
+                    <li>Visual testing with Applitools</li>
+                </ul>
+                
+                <div class="code-snippet">
+                    <h4>Sample Locator Strategy</h4>
+                    <pre><code>// Hybrid app element identification
+By loginButton = MobileBy.AccessibilityId("login-btn");
+By usernameField = MobileBy.xpath("//android.widget.EditText[@text='Username']");</code></pre>
+                </div>
+            </div>
+            
+            <div class="mobile-card">
+                <div class="mobile-icon">
+                    <i class="fas fa-tablet-alt"></i>
+                </div>
+                <h3>Device Lab Management</h3>
+                <ul>
+                    <li>Physical device cloud setup</li>
+                    <li>ADB command automation</li>
+                    <li>Device farm allocation</li>
+                    <li>Automated screencast recording</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="api-testing">
+    <h3>API Automation</h3>
+    <div class="api-tabs">
+        <div class="api-tab-header">
+            <button class="api-tab-btn active" data-tab="restassured">REST Assured</button>
+            <button class="api-tab-btn" data-tab="postman">Postman</button>
+            <button class="api-tab-btn" data-tab="soapui">SoapUI</button>
+        </div>
+        
+        <div class="api-tab-content active" id="restassured">
+            <pre><code class="language-java">given()
+    .contentType(ContentType.JSON)
+    .body("{ \"username\": \"testuser\", \"password\": \"pass123\" }")
+.when()
+    .post("/login")
+.then()
+    .statusCode(200)
+    .body("authToken", notNullValue());</code></pre>
+        </div>
+        
+        <div class="api-tab-content" id="postman">
+            <img src="assets/postman-collection.png" alt="Postman Collection">
+        </div>
+        
+        <div class="api-tab-content" id="soapui">
+            <img src="assets/soapui-test.png" alt="SoapUI Test Case">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
